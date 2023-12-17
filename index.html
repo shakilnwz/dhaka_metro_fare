@@ -11,7 +11,132 @@
 </head>
 
 <body>
+    <header class="header">
+        <a href="/" id="home"><img src="./src/static/metro.png" alt="metro">Dhaka Metro</a>
+        <a href="#" id="translation"><img src="./src/static/bn.png" alt="">বাংলায় অনুবাদ</a>
+        <span class="nav">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
 
+        </span>
+        <nav id="nav">
+            <h2>Menu</h2>
+            <ul>
+                <li>Home</li>
+                <li>Ticket / Fare</li>
+                <li>Timetable</li>
+                <li>Routes</li>
+                <li>Rules</li>
+                <li>Map</li>
+                <li>Technical Details</li>
+                <li>Time Line</li>
+            </ul>
+        </nav>
+    </header>
+    <div class="main">
+        <h1>Ticket / Fare</h1>
+        <h2>Calculate ticket fare between stations</h2>
+        <p>Select origin and destination stations to calculate the fares. All fares are calculated as per
+            <a href="">
+                Dhaka Traffic
+                Coordination Authority
+            </a> circular of 8 September 2022. A map showing the stations is available <a href="">here</a>
+        </p>
+        <section class="fare_calc">
+            <div class="flex">
+                <div class="calculator">
+                    <label for="origin">Origin</label>
+                    <select name="origin" id="origin">
+                        <option value="select one">Select One</option>
+                        <option value="a">Select One</option>
+                        <option value="a">Select One</option>
+                        <option value="a">Select One</option>
+                        <option value="a">Select One</option>
+                    </select>
+                    <label for="destination">Destination</label>
+                    <select name="destination" id="destination">
+                        <option value="select one">Select One</option>
+                        <option value="a">Select One</option>
+                        <option value="a">Select One</option>
+                        <option value="a">Select One</option>
+                        <option value="a">Select One</option>
+                    </select>
+                    <p id="fare">Fare (৳):<span id="f_amount"></span></p>
+                </div>
+                <figure><img src="./src/static/dhaka-metro-rail-ticket-machine.jpg" alt="tvm">
+                    <figcaption>Dhaka Metro TVM | Mahmud Hossain Opu/Dhaka Tribune</figcaption>
+                </figure>
+            </div>
+            <p class="warning"> There is <i>no</i> half fare for students</p>
+        </section>
+        <section class="types">
+            <h2>Types of ticket and passes</h2>
+            <p>Single Journey Ticket, MRT Pass or Rapid pass can be used to travel on MRT Line-6. MRT Pass is a type of
+                magnetic contactless Integrated Circuit Ticketing commonly known as smart cards. There is a 30% discount
+                for using MRT or Rapid pass compared to single journey tickets.</p>
+            <h3>HOW TO BUY TICKETS</h3>
+            <p>Single journey tickets can be bought via two ways - manually from counters or from automated self service
+                machines. In the manual system, passengers will be able to buy tickets from ticket counters at stations.
+                Alternatively, tickets can be bought from self service Ticket Vending Machine (TVM).</p>
+            <h3>How to buy MRT pass</h3>
+            <div>
+                <figure>
+                    <a href="#">
+                        <img src="./src/static/mrtRegistratioForm.jpg" alt="mrt form">
+                        <figcaption>এমআরটি রেজিস্ট্রেশন ফর্ম - ডাউনলোড করতে ক্লিক করুন</figcaption>
+                    </a>
+                </figure>
+                <p>MRT passes can be bought from <i>ticket counters only</i> at stations. A regsitration form needs to
+                    filled
+                    to apply for an MRT pass with a payment of ৳500 (includes ৳200 refundable deposit for the pass).
+                    Click on the image to download the form. Pass will be issued for 10 years. They can be topped up
+                    from self service Ticket Vending Machine (TVM). Online or mobile topup facility will be available in
+                    future.</p>
+                <h3>How to buy rapid pass</h3>
+                <p>RAPID pass can be used to travel on Dhaka Metro as well as other transport systems in Bangladesh.
+                    Initial payment is ৳400 (includes ৳200 refundable deposit for the pass). RAPID passes can be bought
+                    or topped up from ticket counters at stations or from the following branches of DBBL bank.</p>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <figure>
+                    <a href="#">
+                        <img src="./src/static/rapidRegistratioForm.jpg" alt="rapid form">
+                        <figcaption>Click to download RAPID registration form</figcaption>
+                    </a>
+                </figure>
+                <p>Printout and fill up the form beforehand to avoid delay at station / bank. Please note only name and
+                    mobile numbers are minimum fields required on the form (marked with *). You do not have to share the
+                    other infromation if you do not want to. A card user can recharge a minimum of ৳100 and a maximum of
+                    ৳1,000, but the card balance cannot exceed ৳10,000.</p>
+
+            </div>
+        </section>
+
+    </div>
+    <footer>
+        <p class="cookie_info">
+            This site uses cookies for site analysis and advertising - <a href="#cookie">see details here.</a>
+        </p>
+        <p class="copyright">&copy; <a href="">Bangla Online.</a> All rights reserved</p>
+
+    </footer>
 </body>
 
 </html>

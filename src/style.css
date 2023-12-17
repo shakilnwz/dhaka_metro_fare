@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;700;900&display=swap');
+
+*,
+*::after,
+*::before {
+    /* reseting browser styles */
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    /* custom props */
+
+    /* fonts*/
+    --font-main: 'Source Sans 3', Helvetica, sans-serif;
+
+    /* font weight */
+    --fw-regular: 400;
+    --fw-medium: 700;
+    --fw-bold: 900;
+
+    /* font sizes */
+    --fs-h1: 5.8rem;
+    --fs-h2: 2.3rem;
+
+    --fs-reg: 2.1rem;
+    --fs-sm: 1.7rem;
+    --fs-xsm: 1.6rem;
+    --fs-tiny: 1.3rem;
+
+    /* colors */
+    --color-font: #585858;
+    --color-white: #fff;
+    --color-black: #000;
+    --color-hover: #f2849e;
+    --color-active: #ee5f81;
+    --color-footer-bg: #f6f6f6;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+    font-size: var(--fs-reg);
+    line-height: 2.6rem;
+    font-family: var(--font-main);
+    color: var(--color-font);
+    font-weight: var(--fw-regular);
+}
+
+
+h1 {
+    font-size: var(--fs-h1);
+    font-weight: var(--fw-medium);
+}
+
+h2 {
+    font-size: var(--fs-h2);
+    font-weight: var(--fw-bold);
+}
+
+h3 {
+    font-size: var(--fs-reg);
+    font-weight: var(--fw-bold);
+}
